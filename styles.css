@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://i.pinimg.com/564x/f4/73/e8/f473e80e8aa0e4d7a0085b8c49aaeda4.jpg') no-repeat center center fixed; /* Adjust the path and properties as needed */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+}
+
+.page-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    animation: moveHeading infinite alternate; /* Animation */
+    overflow: hidden; /* Hide the overflow */
+}
+
+@keyframes moveHeading {
+    0% {
+        transform: translateY(0) translateX(0%);
+        opacity: 0; /* Start with opacity 0 */
+    }
+    50% {
+        opacity: 1; /* At 50% animation, show the heading */
+    }
+    100% {
+        /* transform: translateY(-20px) translateX(50%); Adjust as needed */
+        opacity: 1; /* Keep the heading visible */
+    }
+}
+
+
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /* transition: height 0.5s ease-in-out; */
+}
+
+.form-container.expanded {
+    height: 380px; /* Adjust as needed */
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+.additional-content {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.additional-content p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.additional-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.forgot-password {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make it block-level */
+    margin-top: 10px; /* Adjust spacing */
+    margin: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;/* Underline on hover */
+}
+.signup-link {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.signup-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.signup-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Adjust padding as needed */
+    width: 100%; /* Adjust width as needed */
+    max-width: 440px; /* Set maximum width */
+    margin: 0 auto;
+    height:10px;
+    margin-bottom: 10px;
+    
+}
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px; /* Add margin-top to create distance */
+}
+
+
+
+
